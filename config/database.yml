@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["RAILS_DATABASE_URL"] %>
   database: RENT_A_PET_production
   username: RENT_A_PET
   password: <%= ENV["RENT_A_PET_DATABASE_PASSWORD"] %>
