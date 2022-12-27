@@ -1,0 +1,8 @@
+<h3 class="ps-3"><%= title %></h3>
+<div class="other-collection-slider">
+  <% pets.each do |pet| %>
+    <div class="slider-card">
+      <%= render "shared/pet_card", pet: pet, delete: false %>
+    </div>
+  <% end %>
+</div>

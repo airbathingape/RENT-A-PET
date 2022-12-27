@@ -1,0 +1,28 @@
+<div class="container-fluid m-0 p-0">
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(https://www.westend61.de/images/0001493985pw/happy-man-smiling-while-playing-with-pet-lying-on-sofa-at-home-EBBF01796.jpg);">
+    <div class="banner-head">
+      <h1>RENT A PET</h1>
+    </div>
+
+  </div>
+</div>
+<div class="container">
+
+  <div class="text-center my-5">
+    <h2>Want a pet but unsure about owning one?</h2>
+  </div>
+
+  <div class="text-center  my-5">
+      <h2 class=""> Try Rent a Pet!</h2>
+      <h3 class="my-5">Browse through our selection of pets and choose the right pet for you!</h3>
+  </div>
+
+  <div class="browse-pets-btn-container my-5">
+    <%=link_to pets_path, class: 'browse-pets-btn'  do%>
+      <h2 class="mb-0">Browse Pets</h2>
+    <%end %>
+  </div>
+</div>
+<div class="container mt-5 mb-3">
+  <%= render "pets/cards", title: "Recommended Pets", pets: @pets  %>
+</div>

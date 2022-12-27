@@ -1,0 +1,59 @@
+$height:400px;
+$px:80px;
+.photos{
+  height: $height;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  gap: 8px;
+}
+.main-photo img{
+  height: $height;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.sub-photos{
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  grid-template-rows: $height/2 $height/2;
+  gap: 8px;
+}
+.sub-photos img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.book-block{
+  padding-right: $px;
+  padding-left: $px;
+  width: 560px;
+  border-radius: 16px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.pet-info ul{
+  list-style-type: none;
+  font-weight: bold;
+  cursor: default;
+}
+.pet-info li{
+  padding: 10px;
+  background-color: rgba(0,0,0,0.25);
+  border-radius: 5px;
+  color: rgba(0,0,0,0.85);
+  transition: 300ms;
+}
+.pet-info li:hover{
+  border-radius: 2px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+.pet-description{
+  font-size: 1.2em;
+  max-width: 720px;
+  word-wrap: break-word
+
+}

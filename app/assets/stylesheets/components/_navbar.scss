@@ -1,0 +1,51 @@
+.brand-link{
+  text-decoration: none;
+  color: #60463B;
+}
+.brand-link:hover{
+    color: #60463B;
+}
+
+.nav-icon{
+  font-size: 3em;
+  color: #60463B;
+}
+.nav-brand-text{
+  font-size: 32px;
+}
+
+.navbar-search{
+  width: 100%;
+  background: #F4F4F4;
+  border-radius: 50px;
+  border: 1px solid rgba(0,0,0,0.3);
+  padding: 8px 8px 8px 16px;
+}
+.navbar-search-btn{
+  position: absolute;
+  right: 20px;
+  background: transparent;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(0,0,0,0.5);
+}
+.search-wrap{
+  position: relative;
+}
+.navbar-search-container{
+  width: 100%;
+}
+.container-gap{
+  gap: 14%;
+}
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid rgba(0,0,0,0.3);
+}
+
+.avatar-container{
+  width: 820px;
+  display: flex;
+  justify-content: end;
+}

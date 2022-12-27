@@ -1,0 +1,48 @@
+<div class="container">
+  <h1 class="mt-3 mb-3 ps-3"><%= @pet.name %></h1>
+  <div class="photos">
+    <div class="main-photo">
+      <img src= "<%= @pet.photo.attached? ? cl_image_path(@pet.photo.key): "https://source.unsplash.com/featured/?#{@pet.species}&#{rand(10000)}" %>" alt="main-photo photo" >
+    </div>
+    <div class="sub-photos">
+      <img src="https://source.unsplash.com/featured/?<%=@pet.species%>&<%= rand(1000)%>" alt="sub-photo photo">
+      <img src="https://source.unsplash.com/featured/?<%=@pet.species%>&<%= rand(1000)%>" alt="sub-photo photo">
+      <img src="https://source.unsplash.com/featured/?<%=@pet.species%>&<%= rand(1000)%>" alt="sub-photo photo">
+      <img src="https://source.unsplash.com/featured/?<%=@pet.species%>&<%= rand(1000)%>" alt="sub-photo photo">
+    </div>
+  </div>
+  <div class="info-container mt-4 d-flex justify-content-between">
+    <div class="description ">
+      <div class="pet-info">
+        <ul class="list-inline">
+          <li class="list-inline-item mb-3">
+            <i class="fa-solid fa-paw"></i> <%=@pet.species %>
+          </li>
+          <li class="list-inline-item mb-3">
+            <i class="fa-solid fa-cake-candles"></i> <%=@pet.age %> yrs
+          </li>
+          <li class="list-inline-item mb-3">
+            <i class="fa-solid fa-venus-mars"></i> <%=@pet.gender%>
+          </li>
+          <li class="list-inline-item mb-3">
+            <i class="fa-solid fa-house-chimney"></i> <%=@pet.shelter.name%>
+          </li>
+          <li class="list-inline-item mb-3">
+            <i class="fa-solid fa-location-dot"></i> <%=@pet.shelter.location%>
+          </li>
+        </ul>
+      </div>
+      <div class="pet-description mt-5">
+        <%="#{@pet.description}"%>
+      </div>
+    </div>
+    <div class="book-block py-5">
+      <h2 class="d-flex justify-content-center">Booking</h2>
+      <div class="booking-form">
+        <%=render "bookings/form" %>
+      </div>
+    </div>
+  </div>
+
+    <%= render "pets/cards", title: "Other #{@pet.species}s", pets: @pets  %>
+</div>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RENTAPet</title>
+    <link rel="shortcut icon" type="image/png" href="../../assets/images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+  </head>
+
+  <body class="main">
+    <%= render "shared/navbar"%>
+    <div class="content-vh">
+    <%=yield%>
+    </div>
+    <%= render "shared/footer" %>
+  </body>
+</html>

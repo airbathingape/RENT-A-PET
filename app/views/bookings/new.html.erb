@@ -1,0 +1,14 @@
+<div class="container d-flex justify-content-center align-items-center">
+  <div class="form-container mt-5">
+    <div class="form-header d-flex justify-content-center">
+      <h1>Confirm Booking</h1>
+    </div>
+    <%= render 'form' %>
+    <div class="d-flex justify-content-center auth-btn-container">
+      <%= link_to pet_path(@pet),
+                  class:"auth-btn-back" do%>
+        <span>Back</span>
+      <%end %>
+    </div>
+  </div>
+</div>

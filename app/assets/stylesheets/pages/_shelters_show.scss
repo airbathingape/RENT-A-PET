@@ -1,0 +1,65 @@
+.pets-container{
+  //border-left: 1px solid rgba(0,0,0,0.3);
+  margin-left: 16px;
+  padding-left: 16px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-radius: 16px;
+}
+.reservation-bg{
+  background-color: white;
+  border-radius: 16px;
+  padding: 16px;
+}
+.pets-column{
+  position:sticky;
+  top:0;
+  height:100vh;
+  overflow:scroll;
+  scrollbar-width: none;
+}
+
+.grid-pets-section{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+.bookings-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.scrollbar{
+  overflow-y: scroll;
+  border-radius: 16px;
+  scrollbar-width: none;
+}
+.rounder{
+  border-radius: 16px;
+}
+.new-pet-btn{
+  font-size: 1.8rem;
+  color: #60463B;
+  display: flex;
+  align-items: center;
+  transition: 300ms;
+}
+.new-pet-btn:hover{
+  transform: rotate(90deg);
+}
+.my-pets-head a{
+  color: #60463B;
+  text-decoration: none;
+}
+
+.card-thinner{
+  max-width: 260px;
+}
+
+.sub-head{
+  //background-color: #F4F4F4;
+  //border-radius: 50px;
+  //padding: 8px;
+}
